@@ -34,6 +34,11 @@ a:hover {
   border-radius: 10px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav {
   display: flex;
   gap: 40px;
@@ -102,9 +107,8 @@ nav {
 }
 
 @media (min-width: 650px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
+  .mobile-nav {
+    display: none;
   }
 
   .left-nav {
