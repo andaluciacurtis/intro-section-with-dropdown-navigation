@@ -1,9 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  height: 100%;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+}
+
+.left-nav {
+  display: flex;
+  gap: 40px;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
 }
 
 .hero {
   display: flex;
+  align-items: center;
+  padding: 50px;
+  max-width: 1300px;
+  justify-content: space-between;
 }
 
+.hero-left {
+  width: 39%;
+}
+
+.hero-img {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.hero button {
+  background-color: black;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.hero h2 {
+  margin: 40px 0;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.clients img {
+  height: 100%;
+}
