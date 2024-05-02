@@ -11,7 +11,6 @@ body, html {
 }
 
 h1 {
-  font-size: 70px;
   font-weight: 700;
 }
 
@@ -26,21 +25,7 @@ a:hover {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
   padding: 20px;
-}
-
-.left-nav {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.right-nav {
-  display: flex;
-  gap: 40px;
-  align-items: center;
 }
 
 .register {
@@ -54,36 +39,13 @@ nav {
   gap: 40px;
 }
 
-.outer-container {
-  display: flex;
-  justify-content: center;
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  padding: 50px;
-  max-width: 1300px;
-  justify-content: space-between;
-}
-
-.hero-left {
-  width: 39%;
-}
-
-.hero-img {
-  width: 40%;
-  display: flex;
-  justify-content: end;
-}
-
 .hero-img img {
   width: 100%;
 }
 
 .hero button {
   background-color: black;
-  padding: 15px 20px;
+  padding: 15px 30px;
   color: white;
   border-radius: 15px;
   font-size: 20px;
@@ -98,6 +60,7 @@ nav {
 
 .hero h2 {
   margin: 40px 0;
+  line-height: 1.5;
 }
 
 .clients {
@@ -108,4 +71,83 @@ nav {
 
 .clients img {
   height: 100%;
+}
+
+@media (max-width: 650px) {
+  nav, .right-nav {
+    display: none;
+  }
+
+  .hero {
+    display: grid;
+    gap: 40px;
+  }
+
+  .hero-left {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-img {
+    grid-row: 1;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .clients img {
+    width: 20%;
+  }
+}
+
+@media (min-width: 650px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .left-nav img {
+    cursor: pointer;
+  }
+
+  .right-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 70px;
+  }
+
+  .outer-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    max-width: 1300px;
+    justify-content: space-between;
+  }
+
+  .hero-left {
+    width: 39%;
+  }
+
+  .hero-img {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+  }
+
 }
