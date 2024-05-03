@@ -19,9 +19,9 @@ a {
   color: black;
 }
 
-a:hover {
+nav a:hover, .company-div:hover, .features-div:hover {
   font-weight: 700;
-  margin-left: -2px;
+  margin-left: -1px;
 }
 
 .navbar {
@@ -42,6 +42,10 @@ a:hover {
 nav {
   display: flex;
   gap: 40px;
+}
+
+.features-div, .company-div {
+  align-self: center;
 }
 
 .hero-img img {
@@ -81,6 +85,7 @@ nav {
 .show {
   display: flex !important;
   flex-direction: column;
+  gap: 10px;
 }
 
 @media (max-width: 650px) {
@@ -136,13 +141,16 @@ nav {
     align-items: center;
   }
 
+  .dropdown-container {
+    padding-top: 15px;
+  }
+
   .features-dropdown, .company-dropdown {
     display: none;
     position: absolute;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 15px lightgrey;
-    margin-top: 15px;
     background-color: white;
   }
 
@@ -152,6 +160,10 @@ nav {
 
   .features-dropdown a, .company-dropdown a {
     padding: 10px;
+  }
+
+  .features-dropdown a:hover, .company-dropdown a:hover {
+    margin: 0 !important;
   }
 
   .dropdown-option:hover {
