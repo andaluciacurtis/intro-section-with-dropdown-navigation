@@ -78,6 +78,11 @@ nav {
   height: 100%;
 }
 
+.show {
+  display: flex !important;
+  flex-direction: column;
+}
+
 @media (max-width: 650px) {
   nav, .right-nav {
     display: none;
@@ -107,6 +112,10 @@ nav {
 }
 
 @media (min-width: 650px) {
+  nav a {
+    font-size: 12px;
+  }
+  
   .mobile-nav {
     display: none;
   }
@@ -125,6 +134,28 @@ nav {
     display: flex;
     gap: 40px;
     align-items: center;
+  }
+
+  .features-dropdown, .company-dropdown {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px lightgrey;
+    margin-top: 15px;
+    background-color: white;
+  }
+
+  .features-dropdown {
+    margin-left: -25px;
+  }
+
+  .features-dropdown a, .company-dropdown a {
+    padding: 10px;
+  }
+
+  .dropdown-option:hover {
+    background-color: lightgrey;
   }
   
   h1 {
